@@ -1,10 +1,10 @@
 function ToyCard(props){
-    const {id, name, image, likes} = props.toy
+    const {id, name, image, likes} = props.toy // destructing 
     // console.log(props)
     return(
         <div className="card" id={`toy-${id}`}>
             <h2>{name}</h2>
-            <img src={image} className="toy-avatar"/>
+            <img src={image} className="toy-avatar" alt=""/>
             <p>{likes} Likes </p>
             <button className="like-btn">Like &lt;3</button>
         </div>
